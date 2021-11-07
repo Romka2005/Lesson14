@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background: url(./img/space.jpg)center no-repeat;
+    background-size: cover;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.header h1{
+    text-align: center;
+}
+.header > p{
+    text-align: center;
+}
+.box_job{
+    width: 70%;
+    height: 500px;
+    background: url(./img/space2.jpg)center no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.box_job h2{
+    margin-left: 10px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box .conteiner_job{
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    background: rgb(7, 0, 109);
+    border-radius: 20px;
+    padding: 20px;
+}
+.box_name{
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner_job h3{
+    font-size: 13px;
+}
+.box_inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.box_inner a{
+    color: rgb(69, 24, 194);
+    text-decoration: none;
+    transition: all .4s;
+}
+.box_inner a:hover{
+    color: rgb(211, 35, 255);
+}
