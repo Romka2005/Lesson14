@@ -22,7 +22,7 @@ body{
 }
 .box_job{
     width: 70%;
-    height: 500px;
+    height: 600px;
     background: url(./img/space2.jpg)center no-repeat;
     background-size: cover;
     margin: 20px auto;
@@ -64,4 +64,22 @@ body{
 }
 .box_inner a:hover{
     color: rgb(211, 35, 255);
+}
+@media (max-width:840px){
+    .box_job{
+        height: 800px;
+    }
+    .box_job.num{
+        height: 1100px;
+    }
+}
+@media (max-width:500px){
+    .box_job h2{
+        font-size: 15px;
+    }
+}
+@media (max-width:400px){
+    .box{
+        font-size: 10px;
+    }
 }
