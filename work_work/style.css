@@ -5,13 +5,11 @@
     box-sizing: border-box;
 }
 body{
-    color: white;
+    color: black;
 }
 .header{
     width: 100%;
     height: 100%;
-    background: url(./img/space.jpg)center no-repeat;
-    background-size: cover;
     font-family: 'Mochiy Pop One', sans-serif;
 }
 .header h1{
@@ -21,12 +19,12 @@ body{
     text-align: center;
 }
 .box_job{
-    width: 70%;
+    width: 90%;
     height: 600px;
-    background: url(./img/space2.jpg)center no-repeat;
-    background-size: cover;
     margin: 20px auto;
     border-radius: 20px;
+    border:2px solid black;
+    padding: 10px;
 }
 .box_job h2{
     margin-left: 10px;
@@ -36,14 +34,36 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color: white;
 }
-.box .conteiner_job{
+.conteiner_job{
+    width: 250px;
+    height: 100%;
+    margin: 20px;
+    background: rgb(7, 0, 109);
+    border-radius: 20px;
+    padding: 20px;
+}
+.box_job.new{
+    height: 170px;
+}
+.conteiner_jobnew{
     width: 250px;
     height: 100px;
     margin: 20px;
     background: rgb(7, 0, 109);
     border-radius: 20px;
     padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.conteiner_jobnew a{
+    text-decoration: none;
+    color: rgb(80, 67, 255);
+}
+.conteiner_jobnew a:hover{
+    transition: .8s;
+    color: rgb(211, 35, 255);
 }
 .box_name{
     display: flex;
@@ -55,19 +75,82 @@ body{
 .box_inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 .box_inner a{
-    color: rgb(69, 24, 194);
+    color: rgb(80, 67, 255);
     text-decoration: none;
     transition: all .4s;
 }
 .box_inner a:hover{
     color: rgb(211, 35, 255);
 }
+
+input{
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+input:before{
+    content: "";
+    position: fixed;
+    background: url(./img/space2.jpg)no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px solid white;
+    top: 5%;
+    left: 80%;
+    cursor: pointer;
+    border: 0;
+}
+input:checked + .header{
+    background: rgb(7, 0, 109);
+    color: white;
+    background: url(./img/giphy2.gif)center no-repeat;
+    background-size: cover;
+}
+input:checked + .header .box_job{
+    border: 2px solid white;
+    background: url(./img/giphy.gif);
+}
+input:checked + .header .conteiner_job{
+    background: white;
+    color: rgb(80, 67, 255);
+}
+input:checked + .header .conteiner_jobnew{
+    background: white;
+    color: rgb(80, 67, 255);
+}
+input:checked + .header .conteiner_jobnew a{
+    color: rgb(7, 0, 109);
+}
+input:checked + .header .conteiner_jobnew a:hover{
+    color: rgb(80, 67, 255);
+}
+input:checked + .header .conteiner_job .box_inner a{
+    color: rgb(7, 0, 109);
+}
+input:checked + .header .conteiner_job .box_inner a:hover{
+    color: rgb(80, 67, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:840px){
     .box_job{
-        height: 800px;
+        height: 1000px;
     }
     .box_job.num{
         height: 1100px;
@@ -80,9 +163,9 @@ body{
 }
 @media (max-width:400px){
     .box{
-        font-size: 10px;
+        font-size: 15px;
     }
     .box_name h3{
-        font-size: 9px;
+        font-size: 12px;
     }
 }
