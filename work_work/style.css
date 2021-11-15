@@ -23,7 +23,7 @@ body{
     height: 600px;
     margin: 20px auto;
     border-radius: 20px;
-    border:2px solid black;
+    box-shadow: 7px 5px 8px 0px rgba(34, 60, 80, 0.2);
     padding: 10px;
 }
 .box_job h2{
@@ -47,6 +47,9 @@ body{
 .box_job.new{
     height: 170px;
 }
+.box_job.ULTRA{
+    height: 170px;
+}
 .conteiner_jobnew{
     width: 250px;
     height: 100px;
@@ -62,6 +65,25 @@ body{
     color: rgb(80, 67, 255);
 }
 .conteiner_jobnew a:hover{
+    transition: .8s;
+    color: rgb(211, 35, 255);
+}
+
+.conteiner_jobULTRA{
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    background: rgb(7, 0, 109);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.conteiner_jobULTRA a{
+    text-decoration: none;
+    color: rgb(80, 67, 255);
+}
+.conteiner_jobULTRA a:hover{
     transition: .8s;
     color: rgb(211, 35, 255);
 }
@@ -114,7 +136,6 @@ input:checked + .header{
     background-size: cover;
 }
 input:checked + .header .box_job{
-    border: 2px solid white;
     background: url(./img/giphy.gif);
 }
 input:checked + .header .conteiner_job{
@@ -131,6 +152,17 @@ input:checked + .header .conteiner_jobnew a{
 input:checked + .header .conteiner_jobnew a:hover{
     color: rgb(80, 67, 255);
 }
+
+input:checked + .header .conteiner_jobULTRA{
+    background: white;
+    color: rgb(80, 67, 255);
+}
+input:checked + .header .conteiner_jobULTRA a{
+    color: rgb(7, 0, 109);
+}
+input:checked + .header .conteiner_jobULTRA a:hover{
+    color: rgb(80, 67, 255);
+} 
 input:checked + .header .conteiner_job .box_inner a{
     color: rgb(7, 0, 109);
 }

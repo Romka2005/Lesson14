@@ -20,7 +20,7 @@
 }
 .top{
     display: flex;
-    width: 100%;
+    width: 92%;
     height: 100px;
     align-items: center;
     flex-wrap: wrap;
@@ -39,6 +39,15 @@
     margin-right: 15px;
     transition: all .3s;
     font-family: 'Mochiy Pop One', sans-serif;
+}
+.burger{
+    width: 50px;
+    height: 50px;
+    background: red;
+    cursor: pointer;
+}
+.line{
+
 }
 .menu_top a:hover{
     color: rgb(70, 18, 119);
@@ -184,5 +193,6 @@ span{
     }
     .text_header p{
         font-size: 20px;
+        
     }
 }
